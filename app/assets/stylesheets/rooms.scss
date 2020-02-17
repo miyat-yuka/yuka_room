@@ -4,8 +4,17 @@
 }
 
 .main {
-  .main_image {
-    height: 100vh;
-    width: 100vw;
+  background-image: image-url("kabegami.JPG");
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-item {
+    height: 200px;
+    width: 900px;
+    background-color: red;
+    margin-top: 300px;
   }
 }
