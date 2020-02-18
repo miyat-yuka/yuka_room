@@ -97,19 +97,27 @@
       margin-top: 500px;
       background-color: white;
       border-radius: 5px;
-
+      
+      .profile-box-title {
+        height: 50px;
+        padding-top: 50px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+      }
       .profile-box-parent {
-        height: 800px;
-        margin-top: 50px;
-        width: 800px;
+        width: 700px;
+        padding-top: 100px;
         margin: 0 auto;
-        background-color: grey;
 
-        .profile-box-parent-title {
+        .profile-box-parent-1 {
           text-align: center;
-          font-size: xx-large;
-          padding-top: 50px;
-          font-weight: bold;
+        }
+        .profile-box-parent-2 {
+          text-align: center;
+        }
+        .profile-box-parent-3 {
+          text-align: center;
         }
       }
     }
