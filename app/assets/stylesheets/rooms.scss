@@ -3,18 +3,115 @@
   padding: 0;
 }
 
-.main {
+.top {
   background-image: image-url("kabegami.JPG");
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
 
-  .main-item {
-    height: 200px;
-    width: 900px;
-    background-color: red;
-    margin-top: 300px;
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-item {
+      height: 200px;
+      width: 1000px;
+      margin-top: 450px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .main-item-profile {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-profile_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+          color: white;
+        }
+      }
+      .main-item-profile:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+
+      .main-item-skill {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-skill_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+          color: white;
+        }
+      }
+      .main-item-skill:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+
+      .main-item-deliverable {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-deliverable_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+          color: white;
+        }
+      }
+      .main-item-deliverable:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+    }
+  }
+
+  #profile {
+      
+    .profile-box {
+      height: 800px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 500px;
+      background-color: white;
+      border-radius: 5px;
+
+      .profile-box-parent {
+        height: 800px;
+        margin-top: 50px;
+        width: 800px;
+        margin: 0 auto;
+        background-color: grey;
+
+        .profile-box-parent-title {
+          text-align: center;
+          font-size: xx-large;
+          padding-top: 50px;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
