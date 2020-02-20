@@ -146,14 +146,14 @@
       }
       .profile-box-parent2 {
         width: 700px;
-        height: 300px;
+        height: 250px;
         padding: 50px;
         margin: 0 auto;
         border-radius: 5px;
         background-color: grey;
         
         .profile-box-parent-like {
-          padding-top: 50px;
+          padding-top: 10px;
           font-size: x-large;
           color: white;
           text-align: center;
@@ -183,10 +183,51 @@
       .skill-box-title {
         height: 50px;
         padding-top: 100px;
+        margin-bottom: 50px;
         font-family: 'Century Gothic';
         font-size: xx-large;
         text-align: center;
         color: rgb(128, 113, 113);
+      }
+      .skill-box-language {
+        width: 700px;
+        height: 230px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+
+        .skill-box-language-title {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
+        }
+        .skill-box-language_flame {
+          height: 100px;
+          width: 200px;
+          margin: 0 auto;
+          text-align: left;
+
+          .skill-box-language_flame-1 {
+            padding-top: 20px;
+            color: white;
+          }
+          .skill-box-language_flame-2 {
+            color: white;
+          }
+        }
+      }
+      .skill-box-infrastructure {
+        width: 700px;
+        height: 230px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+
+        .skill-box-infrastructure-title {
+          
+        }
       }
     }
   }
