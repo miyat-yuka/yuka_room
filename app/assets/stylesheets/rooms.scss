@@ -18,7 +18,7 @@
     .main-item {
       height: 200px;
       width: 1000px;
-      margin-top: 450px;
+      margin-top: 300px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -36,7 +36,10 @@
           font-family: 'Century Gothic';
           text-align: center;
           line-height: 100px;
-          color: white;
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
       .main-item-profile:hover {
@@ -57,7 +60,11 @@
           font-family: 'Century Gothic';
           text-align: center;
           line-height: 100px;
-          color: white;
+          
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
       .main-item-skill:hover {
@@ -78,7 +85,11 @@
           font-family: 'Century Gothic';
           text-align: center;
           line-height: 100px;
-          color: white;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
         }
       }
       .main-item-deliverable:hover {
@@ -89,36 +100,93 @@
   }
 
   #profile {
+    padding-bottom: 150px;
       
     .profile-box {
-      height: 800px;
+      height: 1100px;
       width: 1000px;
       margin: 0 auto;
-      margin-top: 500px;
+      margin-top: 400px;
       background-color: white;
       border-radius: 5px;
       
       .profile-box-title {
         height: 50px;
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 70px;
         font-family: 'Century Gothic';
         font-size: xx-large;
         text-align: center;
+        color: rgb(128, 113, 113);
       }
       .profile-box-parent {
         width: 700px;
-        padding-top: 100px;
+        height: 200px;
+        padding: 50px;
         margin: 0 auto;
+        border-radius: 5px;
+        background-color: grey;
+        margin-bottom: 50px;
 
-        .profile-box-parent-1 {
+        .profile-box-parent-why {
+          text-align: center;
+          color: white;
+          font-size: x-large;
+        }
+
+        .profile-box-parent-why1 {
+          text-align: center;
+          color: white;
+          padding-top: 20px;
+        }
+        .profile-box-parent-why2 {
+          text-align: center;
+          color: white;
+        }
+      }
+      .profile-box-parent2 {
+        width: 700px;
+        height: 300px;
+        padding: 50px;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: grey;
+        
+        .profile-box-parent-like {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
           text-align: center;
         }
-        .profile-box-parent-2 {
+        .profile-box-parent-like1 {
+          padding-top: 20px;
+          color: white;
           text-align: center;
         }
-        .profile-box-parent-3 {
+        .profile-box-parent-like2 {
+          color: white;
           text-align: center;
         }
+      }
+    }
+  }
+  #skill {
+
+    .skill-box {
+      height: 750px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: white;
+      border-radius: 5px;
+
+      .skill-box-title {
+        height: 50px;
+        padding-top: 100px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+        color: rgb(128, 113, 113);
       }
     }
   }
