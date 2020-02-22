@@ -243,6 +243,33 @@
           }
         }
       }
+      .skill-box-db {
+        width: 700px;
+        height: 190px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 50px;
+
+        .skill-box-db-title {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
+        }
+        .skill-box-db_flame {
+          height: 100px;
+          width: 200px;
+          margin: 0 auto;
+          text-align: left;
+
+          .skill-box-db_flame-1 {
+            padding-top: 20px;
+            color: white;
+            margin-left: 60px;
+          }
+        }
+      }
     }
   }
 }
