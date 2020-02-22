@@ -1,3 +1,373 @@
-// Place all the styles related to the rooms controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  background-image: image-url("kabegami.JPG");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-item {
+      height: 200px;
+      width: 1000px;
+      margin-top: 300px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .main-item-profile {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-profile_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+      .main-item-profile:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+
+      .main-item-skill {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-skill_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+          
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+      .main-item-skill:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+
+      .main-item-deliverable {
+        height: 100px;
+        width: 300px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+
+        .main-item-deliverable_text {
+          font-size: xx-large;
+          font-weight: bold;
+          font-family: 'Century Gothic';
+          text-align: center;
+          line-height: 100px;
+
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+      .main-item-deliverable:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
+    }
+  }
+
+  #profile {
+    padding-bottom: 150px;
+      
+    .profile-box {
+      height: 1100px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 400px;
+      background-color: white;
+      border-radius: 5px;
+      
+      .profile-box-title {
+        height: 50px;
+        padding-top: 100px;
+        padding-bottom: 70px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+        color: rgb(128, 113, 113);
+      }
+      .profile-box-parent {
+        width: 700px;
+        height: 200px;
+        padding: 50px;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: grey;
+        margin-bottom: 50px;
+
+        .profile-box-parent-why {
+          text-align: center;
+          color: white;
+          font-size: x-large;
+        }
+
+        .profile-box-parent-why1 {
+          text-align: center;
+          color: white;
+          padding-top: 20px;
+        }
+        .profile-box-parent-why2 {
+          text-align: center;
+          color: white;
+        }
+      }
+      .profile-box-parent2 {
+        width: 700px;
+        height: 250px;
+        padding: 50px;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: grey;
+        
+        .profile-box-parent-like {
+          padding-top: 10px;
+          font-size: x-large;
+          color: white;
+          text-align: center;
+        }
+        .profile-box-parent-like1 {
+          padding-top: 20px;
+          color: white;
+          text-align: center;
+        }
+        .profile-box-parent-like2 {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+  #skill {
+    padding-bottom: 150px;
+
+    .skill-box {
+      height: 1050px;
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+      background-color: white;
+      border-radius: 5px;
+
+      .skill-box-title {
+        height: 50px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+        color: rgb(128, 113, 113);
+      }
+      .skill-box-language {
+        width: 700px;
+        height: 230px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+
+        .skill-box-language-title {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
+        }
+        .skill-box-language_flame {
+          height: 100px;
+          width: 200px;
+          margin: 0 auto;
+          text-align: left;
+
+          .skill-box-language_flame-1 {
+            padding-top: 20px;
+            color: white;
+          }
+          .skill-box-language_flame-2 {
+            color: white;
+          }
+        }
+      }
+      .skill-box-infrastructure {
+        width: 700px;
+        height: 190px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 50px;
+
+        .skill-box-infrastructure-title {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
+        }
+        .skill-box-infrastructure_flame {
+          height: 100px;
+          width: 200px;
+          margin: 0 auto;
+          text-align: left;
+
+          .skill-box-infrastructure_flame-1 {
+            padding-top: 20px;
+            color: white;
+          }
+        }
+      }
+      .skill-box-db {
+        width: 700px;
+        height: 190px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 50px;
+
+        .skill-box-db-title {
+          padding-top: 50px;
+          font-size: x-large;
+          color: white;
+        }
+        .skill-box-db_flame {
+          height: 100px;
+          width: 200px;
+          margin: 0 auto;
+          text-align: left;
+
+          .skill-box-db_flame-1 {
+            padding-top: 20px;
+            color: white;
+            margin-left: 60px;
+          }
+        }
+      }
+    }
+  }
+  #deliverable {
+    padding-bottom: 150px;
+
+    .deliverable-box {
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding-bottom: 100px;
+      background-color: white;
+      border-radius: 5px;
+
+      .deliverable-box-title {
+        height: 50px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+        color: rgb(128, 113, 113);
+      }
+      .deliverable-box-parent {
+        width: 700px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        a{text-decoration: none;}
+
+        .deliverable-box-parent-app {
+          color: white;
+          font-size: x-large;
+          padding-top: 50px;
+
+          .deliverable-box-parent-app-flame {
+            border: solid;
+            border-color: white;
+            border-radius: 10px;
+            height: 300px;
+            width: 500px;
+            margin: 0 auto;
+
+            .deliverable-box-parent-app-flame_detail {
+              height: 300px;
+              width: 500px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .deliverable-box-parent-app_content {
+            height: 170px;
+            width: 500px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 5px;
+            margin-top: 50px;
+
+            .deliverable-box-parent-app_content-title {
+              height: 50px;
+              padding-top: 40px;
+              font-family: 'Century Gothic';
+              text-align: center;
+              color: rgb(128, 113, 113);
+              font-size: 20px;
+            }
+            .deliverable-box-parent-app_content-text {
+              color: rgb(128, 113, 113);
+              font-size: 15px;
+            }
+          }
+          .deliverable-box-parent-app_plan {
+            height: 250px;
+            width: 500px;
+            background-color: white;
+            margin: 0 auto;
+            border-radius: 5px;
+            margin-top: 50px;
+
+            .deliverable-box-parent-app_plan-title {
+              height: 50px;
+              padding-top: 40px;
+              font-family: 'Century Gothic';
+              text-align: center;
+              color: rgb(128, 113, 113);
+              font-size: 20px;
+            }
+            .deliverable-box-parent-app_plan-text {
+              color: rgb(128, 113, 113);
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
