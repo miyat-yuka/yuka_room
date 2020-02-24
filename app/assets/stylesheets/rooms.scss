@@ -44,27 +44,23 @@
         transform: translateY(3px);
       }
 
-      .main-item-skill {
+      .skill_link {
+        display: block;
         height: 100px;
         width: 300px;
         background-color: rgba(211, 148, 192, 0.7);
         cursor: pointer;
         border-radius: 5px;
-
-        .main-item-skill_text {
-          font-size: xx-large;
-          font-weight: bold;
-          font-family: 'Century Gothic';
-          text-align: center;
-          line-height: 100px;
-          
-          a {
-            text-decoration: none;
-            color: white;
-          }
-        }
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: 'Century Gothic';
+        text-align: center;
+        line-height: 100px;
+        text-decoration: none;
+        color: white;
       }
-      .main-item-skill:hover {
+
+      .skill_link:hover {
         background: #c598be;
         transform: translateY(3px);
       }
