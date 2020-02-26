@@ -105,20 +105,23 @@
         contact-連絡先-
       .contact-box-parent
         .contact-box-parent_flame
-          .contact-box-parent_twitter
-            .contact-box-parent_twitter_icon
-              = icon("fab", "twitter", class: "twitter_icon")
-            .contact-box-parent_twitter_text
-              twitter
-          .contact-box-parent_blog
-            .contact-box-parent_blog_icon
-              = icon("fas", "book-reader", class: "blog_icon")
-            .contact-box-parent_blog_text
-              blog
-          .contact-box-parent_mail
-            .contact-box-parent_mail_icon
-              = icon("fas", "envelope", class: "mail_icon")
-            .contact-box-parent_mail_text
-              mail
+          = link_to "https://twitter.com/IT14189510" do
+            .contact-box-parent_twitter
+              .contact-box-parent_twitter_icon
+                = icon("fab", "twitter", class: "twitter_icon")
+              .contact-box-parent_twitter_text
+                twitter
+          = link_to "https://yun-yuka.hatenablog.com/" do
+            .contact-box-parent_blog
+              .contact-box-parent_blog_icon
+                = icon("fas", "book-reader", class: "blog_icon")
+              .contact-box-parent_blog_text
+                blog
+          = link_to "#" do
+            .contact-box-parent_mail
+              .contact-box-parent_mail_icon
+                = icon("fas", "envelope", class: "mail_icon")
+              .contact-box-parent_mail_text
+                mail
 
 = render "layouts/top.html.haml"
