@@ -4,6 +4,7 @@
       = link_to "profile", "#profile", class: "profile_link"
       = link_to "skill", "#skill", class: "skill_link"
       = link_to "deliverable", "#deliverable", class: "deliverable_link"
+      = link_to "contact", "#contact", class: "contact_link"
   #profile
     .profile-box
       .profile-box-title
@@ -97,4 +98,27 @@
               情報が探しにくかっりして使いにくかったので、
             .deliverable-box-parent-app_plan-text
               もっと使いやすいツールを自分で作ってみたかった。
+  
+  #contact
+    .contact-box
+      .contact-box-title
+        contact-連絡先-
+      .contact-box-parent
+        .contact-box-parent_flame
+          .contact-box-parent_twitter
+            .contact-box-parent_twitter_icon
+              = icon("fab", "twitter", class: "twitter_icon")
+            .contact-box-parent_twitter_text
+              twitter
+          .contact-box-parent_blog
+            .contact-box-parent_blog_icon
+              = icon("fas", "book-reader", class: "blog_icon")
+            .contact-box-parent_blog_text
+              blog
+          .contact-box-parent_mail
+            .contact-box-parent_mail_icon
+              = icon("fas", "envelope", class: "mail_icon")
+            .contact-box-parent_mail_text
+              mail
+
 = render "layouts/top.html.haml"
