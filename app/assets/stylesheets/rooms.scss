@@ -17,7 +17,7 @@
 
     .main-item {
       height: 200px;
-      width: 1000px;
+      width: 1200px;
       margin-top: 300px;
       display: flex;
       justify-content: space-between;
@@ -26,7 +26,7 @@
       .profile_link {
         display: block;
         height: 100px;
-        width: 300px;
+        width: 250px;
         background-color: rgba(211, 148, 192, 0.7);
         cursor: pointer;
         border-radius: 5px;
@@ -47,7 +47,7 @@
       .skill_link {
         display: block;
         height: 100px;
-        width: 300px;
+        width: 250px;
         background-color: rgba(211, 148, 192, 0.7);
         cursor: pointer;
         border-radius: 5px;
@@ -68,7 +68,7 @@
       .deliverable_link {
         display: block;
         height: 100px;
-        width: 300px;
+        width: 250px;
         background-color: rgba(211, 148, 192, 0.7);
         cursor: pointer;
         border-radius: 5px;
@@ -85,8 +85,31 @@
         background: #c598be;
         transform: translateY(3px);
       }
+
+      .contact_link {
+        display: block;
+        height: 100px;
+        width: 250px;
+        background-color: rgba(211, 148, 192, 0.7);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: 'Century Gothic';
+        text-align: center;
+        line-height: 100px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .contact_link:hover {
+        background: #c598be;
+        transform: translateY(3px);
+      }
     }
   }
+
+  
 
   #profile {
     padding-bottom: 150px;
@@ -353,6 +376,86 @@
             .deliverable-box-parent-app_plan-text {
               color: rgb(128, 113, 113);
               font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #contact {
+    padding-bottom: 150px;
+
+    .contact-box {
+      width: 1000px;
+      margin: 0 auto;
+      margin-top: 100px;
+      padding-bottom: 100px;
+      background-color: white;
+      border-radius: 5px;
+
+      .contact-box-title {
+        height: 50px;
+        padding-top: 100px;
+        margin-bottom: 50px;
+        font-family: 'Century Gothic';
+        font-size: xx-large;
+        text-align: center;
+        color: rgb(128, 113, 113);
+      }
+      .contact-box-parent {
+        width: 700px;
+        background-color: grey;
+        margin: 0 auto;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 50px;
+        a{text-decoration: none;}
+
+        .contact-box-parent_flame {
+          width: 400px;
+          height: 200px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 auto;
+
+          .contact-box-parent_twitter {
+
+            .contact-box-parent_twitter_icon {
+
+              .twitter_icon {
+                font-size: xx-large;
+                color: rgb(0, 153, 255);
+              }
+            }
+            .contact-box-parent_twitter_text {
+              color: white;
+            }
+          }
+          .contact-box-parent_blog {
+
+            .contact-box-parent_blog_icon {
+
+              .blog_icon {
+                font-size: xx-large;
+                color: rgb(17, 196, 112);
+              }
+            }
+            .contact-box-parent_blog_text {
+              color: white;
+            }
+          }
+          .contact-box-parent_mail {
+
+            .contact-box-parent_mail_icon {
+
+              .mail_icon {
+                color: pink;
+                font-size: xx-large;
+              }
+            }
+            .contact-box-parent_mail_text {
+              color: white;
             }
           }
         }
